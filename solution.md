@@ -1,15 +1,45 @@
-Part 1: Explanatory Paragraph
-When you type a URL into your web browser (the client), it triggers a request-response cycle by sending an HTTP (Hypertext Transfer Protocol) or securely encrypted HTTPS request across the internet to the server where the website lives. For a static website, the server simply responds by sending pre-written HTML, CSS, and JavaScript files directly back to the client. However, if it is a dynamic website, the server first communicates with a database to retrieve specific, up-to-date data (like user profiles or live feeds) and builds the webpage on the fly before sending the final code back. Once the browser receives this response, it translates the code into the visual website that opens on your screen.
+Just like the previous assignment, I cannot execute these commands on your computer or take the screenshot for you, but I can provide the exact "record of terminal commands" you need to submit, along with instructions on how to capture your screenshot.
+
+Because terminal commands can contain code, I have formatted this using standard code blocks rather than interactive steps.
+
+Part 1: Record of Terminal Commands for Submission
+You can copy and paste the text below into your assignment submission. These commands represent the standard Unix/Bash workflow (used in Mac, Linux, and Git Bash on Windows) which is the industry standard for web development.
+
+Bash
+# 1. Create the main project folder
+mkdir web-development-practice
+
+# 2. Navigate into the new folder
+cd web-development-practice
+
+# 3. Create the three weekly folders inside it
+mkdir week-1 week-2 week-3
+
+# 4. Create an index.html file inside each folder
+touch week-1/index.html week-2/index.html week-3/index.html
+
+# 5. Practice navigating, renaming, and deleting
+mkdir temp-folder           # Create a temporary folder
+cd temp-folder              # Navigate into it
+cd ..                       # Navigate back out
+mv temp-folder old-folder   # Rename the folder
+rm -r old-folder            # Delete the folder completely
+
+# 6. Open the project folder in VS Code
+code .
+(Note: If you are strictly using the default Windows Command Prompt instead of Git Bash or PowerShell, you would use type nul > week-1\index.html instead of touch, ren instead of mv, and rmdir /s instead of rm -r).
 
 Part 2: How to get your Screenshot
-To fulfill the second part of your assignment, you'll need to take a screenshot of the Network tab on your own computer. Here is exactly how to do it:
+To fulfill the visual part of your assignment, you need to show the final folder structure that these commands created.
 
-Open Google Chrome and go to any website (e.g., wikipedia.org).
+Open your terminal (Terminal on Mac, or Git Bash / PowerShell on Windows).
 
-Right-click anywhere on the page and select Inspect (or press Ctrl + Shift + I on Windows / Cmd + Option + I on Mac).
+Type or paste the commands above one by one, pressing Enter after each line.
 
-In the panel that opens, click on the Network tab at the top. (If you don't see it, click the >> arrows to reveal hidden tabs).
+When you run the final command (code .), Visual Studio Code will automatically open on your screen with the web-development-practice folder loaded.
 
-With the Network tab open, refresh the page (F5 or Ctrl + R). You will see a waterfall of files (requests) loading in the panel.
+In VS Code, look at the Explorer sidebar on the left.
 
-Take a screenshot of this entire window showing the list of network requests and save it to submit with your paragraph.
+Click the little arrows next to week-1, week-2, and week-3 so they expand to show the index.html file sitting inside each one.
+
+📸 Take a screenshot of your entire VS Code window showing this completed folder structure in the left sidebar.
